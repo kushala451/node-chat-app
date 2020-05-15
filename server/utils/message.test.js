@@ -6,10 +6,10 @@ describe('generateMessage',() =>{
     it('should generate correct message object',() => {  
         var  from ='raghu';
         var text = 'some message';
-        //  var createdAt = new Date().getTime();
+         var createdAt = new Date().getTime();
         var message = generateMessage(from,text);
 
-        expect(message.createdAt).toBe('number');
+        expect(message.createdAt).toBe();
         expect(message).toBe({from,text});
      
 
